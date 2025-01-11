@@ -1,4 +1,4 @@
-"use client";
+"use server";
 
 export async function aggregate(route: string) {
     await fetch('https://sheetdb.io/api/v1/q8jwalzc3gh0f', {
