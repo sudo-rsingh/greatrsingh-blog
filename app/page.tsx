@@ -4,20 +4,7 @@ import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 const PersonalWebsite = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-4">
-          <div className="flex justify-between items-center">
-            <span className="font-bold text-xl text-gray-800">Alex Chen</span>
-            <div className="space-x-6">
-              <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
-              <a href="#research" className="text-gray-600 hover:text-gray-900">Research</a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-900">Projects</a>
-              <a href="#publications" className="text-gray-600 hover:text-gray-900">Publications</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+
 
       {/* Hero Section */}
       <div className="bg-white">
@@ -152,21 +139,28 @@ const PersonalWebsite = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-200">
-        <div className="max-w-5xl mx-auto px-4 py-8">
-          <div className="flex justify-between items-center">
-            <p className="text-gray-600">
-              © 2024 Alex Chen. All rights reserved.
-            </p>
-            <div className="flex space-x-4">
-              <Github className="text-gray-600 hover:text-gray-900" size={20} />
-              <Linkedin className="text-gray-600 hover:text-gray-900" size={20} />
-              <Mail className="text-gray-600 hover:text-gray-900" size={20} />
+      {/* Letters Section */}
+      <section id="letters" className="py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Letters</h2>
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Letter to the Future</h3>
+              <p className="text-gray-600">
+                A reflection on the role of robotics and AI in shaping the world of tomorrow.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Open Letter to Researchers</h3>
+              <p className="text-gray-600">
+                Discussing collaboration and ethics in the field of machine learning.
+              </p>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+
     </div>
   );
 };
