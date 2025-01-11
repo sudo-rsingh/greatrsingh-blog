@@ -4,7 +4,6 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "../../../components/getPostMetadata";
-import { aggregate } from "../../lib/actions/aggregate";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -23,8 +22,6 @@ export const generateStaticParams = async () => {
 
 const PostPage = async (props: any) => {
   const slug = props.params.slug;
-
-  await aggregate(slug);
 
   const post = getPostContent(slug);
   return (
